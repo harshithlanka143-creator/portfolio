@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peronal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90595ae650.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" alt="logo" class="logo" height="37px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Hashitha Lanka</span> <br>from India</h1>
+                <a href="#" class="btn btn-2">Download CV</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme.png" alt="99303">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Motivated Computer Science Engineering student with a foundation in Java, Python, Full Stack Development. Seeking oppurtunities to gain practical experience and contribute to innovative projects. Commited to continuous learning and personal growth</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.Tech at Andhra University College of Engineering</li>
+                            <li><span>2020-2021</span><br>class 12th at Narayana IIT Academy</li>
+                            <li><span>2018-2019</span><br>class 10th at Narayana e-Techno school</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, Python</li>
+                            <li><span>Web Development</span><br>HTML, CSS, Javascript, Bootstrap,<br> Node.js, MySQL</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship at I&T Labs</span><br>Programming with Python<br>Full Stack Application Development<br>Machine Learning</li>
+                            <li><span>Peronal Coding Projects</span><br>Created website clones<br>Responsive landing pages & e-Commerce website<br>Interactive web-apps</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development<br> Services</h2>
+                    <p>Front-end expertise in HTML, CSS, and JavaScript for creating responsive and visually appealing websites.
+                        Full-stack development capabilities using technologies like Node.js, Express, and databases.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Programming and Custom Software Development</h2>
+                    <p>Proficiency in Python for web applications, scripts, and data analysis.
+                        C++ development for system-level software, games, and performance-critical applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/clone.png" alt="">
+                    <div class="layer">
+                        <h3>Website clones</h3>
+                        <p>Successfully replicated the Nike website, Amazon and much more, complete with product showcases, interactive elements, and a user-friendly design.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ecommerce.jpg" alt="">
+                    <div class="layer">
+                        <h3>Responsive Landing Pages & E-commerce Website</h3>
+                        <p>Designed and coded responsive landing pages and a e-Commerce website for various clients, ensuring optimal user experience on all devices and screen sizes.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/resize-webapp.png" alt="">
+                    <div class="layer">
+                        <h3>Interactive Web Apps</h3>
+                        <p>Developed various interactive web applications (like calculator, to-do list, etc.) with engaging user interfaces, real-time functionality, and data manipulation.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container cont-content">
+            <div class="row">
+                <div class="contact-me">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> kanduri.cherry04@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7989593718</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-2">Download CV</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &#169; Portfolio.<i class="fa-solid fa-heart"></i> All rights are reserved.</p>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+
+</body>
+</html>
